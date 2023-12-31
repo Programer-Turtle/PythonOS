@@ -21,7 +21,7 @@ Extra Tips:
 - Most actions can be exited by typing 'exit'.
 
 # Program Manager
-Used to run, install, get info from, and delte programs.
+Used to run, install, get info from, and delete programs.
 
 1. **Run Program** Runs program selcted from list.
 2. **Install Program** Installs program to system from computer using directories path. Any program must have a "index.py" file for it to run in PythonOS
