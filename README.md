@@ -3,7 +3,7 @@
 Hello welcome to Python OS. This program has some scripts from python like the ascii art and the preinstalled adventure game. This program has the capability to run python code. In the future we plan to add file handling. If you need help type '?' or 'help'. Feel free to modify Python OS to make your own.
 
 # How to use
-Open the "PythonOS.py" file. Makr sure you have the latest version of python installed.
+Open the "PythonOS.py" file. Make sure you have the latest version of python installed. It can also be run in Windows terminals. WARNING this script only works in Windows at the moment.
 
 # Main File
 Used to navigate through commands and other programs
