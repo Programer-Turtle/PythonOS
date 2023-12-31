@@ -52,7 +52,7 @@ Shows either system or user errors.
 # Fixer
 It contians backups of the code for some system files. It can use these backups to restore files if missing.
 
-- **backed up files**
+**backed up files**
 - `SystemActions.py`
 - `errormanager.py`
 - `ProgramManager.py`
