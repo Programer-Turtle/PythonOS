@@ -16,7 +16,10 @@ def GetProgramList():
 #Run programs
 def RunProgram(program_Name):
     try:
-       subprocess.run(['python', os.path.join("System", "Programs", program_Name, "index.py")])
+       program_path = os.path.join("System", "Programs", program_Name, "index.py")
+       with open(program_path, "r"):
+           print("Program index.py file found. Running Progam")
+       subprocess.run(['python', program_path])
     except:
         errormanager.error("user", "File Not Found or does not contain 'index.py' file. Program May have also ended.")
 
