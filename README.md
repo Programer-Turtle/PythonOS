@@ -17,7 +17,7 @@ Used to navigate through commands and other programs
 - `shutdown` - Shuts down Python OS
 
 Extra Tips:
-- You can also type in installed program's names to run them.
+- You can also run installed program's names as commands to run them.
 - Most actions can be exited by typing 'exit'.
 
 # Program Manager
