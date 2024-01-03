@@ -35,6 +35,7 @@ Used to run, install, get info from, and delete programs.
 - `NameCheck` A basic script that allows you to compare names to an unfinished name.
 - `NameScrambled` A basic script that allows you to scramble a list of names.
 - `NameUnscramble` A basic script tha allows to check if a scrambled name is part of a list of unscrambled names. 
+- `Calculator` A basic calulator that can add, subtract, multiplt, divide, and use posistive exponents. This porgram runs using Operations. Operations GitHub: https://github.com/Programer-Turtle/Operations
 
 # System Actions
 Contains actions that are used system wise.
