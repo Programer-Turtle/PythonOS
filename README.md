@@ -31,7 +31,7 @@ Used to run, install, get info from, and delete programs.
 
 # Preinstalled Programs
 - `AdventureGame` A basic terminal based adventure game. Credits to https://github.com/the-coding-pie/text-based-adventure-game-python
-- `ChatBot` A basic chat bot.
+- `ChatBot` A basic chat bot. This program runs using Chatty. Chatty GitHub: https://github.com/Programer-Turtle/Chatty
 - `NameCheck` A basic script that allows you to compare names to an unfinished name.
 - `NameScrambled` A basic script that allows you to scramble a list of names.
 - `NameUnscramble` A basic script tha allows to check if a scrambled name is part of a list of unscrambled names. 
