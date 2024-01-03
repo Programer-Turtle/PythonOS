@@ -3,7 +3,7 @@
 Hello welcome to Python OS. This program has some scripts from python like the ascii art and the preinstalled adventure game. This program has the capability to run python code. In the future we plan to add file handling. If you need help type '?' or 'help'. Feel free to modify Python OS to make your own.
 
 # How to use
-Open the "PythonOS.py" file. Make sure you have the latest version of python installed. It can also be run in Windows terminals. WARNING this script only works in Windows at the moment.
+Open the "PythonOS.py" file. Make sure you have the latest version of python installed. It can also be run in Windows terminals. WARNING this script supports all Operating Systems but the color command only runs in Windows.
 
 # Main File
 Used to navigate through commands and other programs
@@ -12,7 +12,7 @@ Used to navigate through commands and other programs
 - `help/?` - Gives a list of all the commands and what they do.
 - `cls/clear` - Clears all text off the screen.
 - `about` - Clears all text off the screen and shows the about page. Happens automaticaly at boot.
-- `color` - Sets color of the terminal text and saves color for next boot. Example: [Input:color 0a] [Output:Terminal color is green]
+- `color` - Sets color of the terminal text and saves color for next boot. Example: [Input:color 0a] [Output:Terminal color is green]. Only supported on Windows.
 - `ProgramManager` - Opens the program manager
 - `shutdown` - Shuts down Python OS
 

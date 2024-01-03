@@ -2,7 +2,7 @@ Commands:
 help/? - Gives a list of all the commands and what they do.
 cls/clear - Clears all text off the screen.
 about - Clears all text off the screen and shows the about page. Happens automaticaly at boot.
-color - Sets color of the terminal text and saves color for next boot. Example: [Input:color 0a] [Output:Terminal color is green]
+color - Sets color of the terminal text and saves color for next boot. Example: [Input:color 0a] [Output:Terminal color is green]. Only supported on Windows.
 ProgramManager - Opens the program manager
 shutdown - Shuts down Python OS
 
