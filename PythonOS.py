@@ -1,8 +1,14 @@
-import os
+import platform
 import time
+import os
+
+CurrentOS = platform.system()
 #Boot
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-os.system("cls")
+if CurrentOS == "Windows":
+    os.system("cls")
+else:
+    os.system("clear")
 
 try:
     with open(os.path.join("System", "StyleData", "TextColor.txt"), "r") as ColorCode:
@@ -11,8 +17,12 @@ except:
     print("SettingDefaultColor...")
     with open(os.path.join("System", "StyleData", "TextColor.txt"), "w") as ColorCode:
         ColorCode.write("0a")
-        os.system("color 0a")
-        os.system("cls")
+        if CurrentOS == "Windows":
+            ColorCode.write("0a")
+            os.system("color 0a")
+            os.system("cls")
+        else:
+            os.system("clear")
 
 try:
     import System.Fixer as Fixer
@@ -98,7 +108,7 @@ except:
 
 
 print("Booting...")
-os.system("cls")
+ClearScreen()
 try :
     with open(os.path.join("System", "StyleData", "StartUpScreenArt.txt"), "r") as BootArt:
         print(BootArt.read())
@@ -128,10 +138,13 @@ def About():
 
 def SetColor(color):
     try:
-        os.system(f"color {color}")
-        with open(os.path.join("System", "StyleData", "TextColor.txt"), "w") as TextColorFile:
-            TextColorFile.write(color)
-        return
+       if CurrentOS == "Windows":
+            os.system(f"color {color}")
+            with open(os.path.join("System", "StyleData", "TextColor.txt"), "w") as TextColorFile:
+                TextColorFile.write(color)
+            return
+       else:
+           print("Color is only supported on windows")
     except:
         errormanager.error("user", "Invalid Color Code")
 

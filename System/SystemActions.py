@@ -1,9 +1,15 @@
+import System.errormanager as errormanager
+import platform
 import time
 import os
-import System.errormanager as errormanager
+
+CurrentOS = platform.system()
 
 def ClearScreen():
-    os.system("cls")
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def ShowArt(FileName):
     try:
