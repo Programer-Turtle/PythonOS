@@ -1,8 +1,11 @@
 import os
 import subprocess
+import platform
 import shutil
 from .. import errormanager
 from .. import SystemActions
+
+currentOS = platform.system()
 
 def GetProgramList():
     folder_path = os.path.dirname(os.path.abspath(__file__))
@@ -13,13 +16,63 @@ def GetProgramList():
     
     return directories
 
+#AutoPip
+def GetPipList(file):
+    Failed_List = []
+    for line in file:
+        try:
+            if line == "None":
+                return []
+            exec(f"import {line}")
+        except:
+            Failed_List.append(line)
+
+        if Failed_List == []:
+            return "None"
+        return Failed_List
+
+def InsatllModuels(InstallList):
+    for moduel in InstallList:
+        failedList = []
+        print(f"Installing {moduel}")
+        try:
+            os.system(f"pip install {moduel}")
+            print(f"AutoPip insalled {moduel} successfully")
+        except:
+            errormanager.error("system" , f"Failed to install {moduel}. Auto Pip file could be incorrectly setup.")
+            failedList.append(moduel)
+        return failedList
+
+
+def AutoPip(ProgramPath):
+    try:
+        with open(os.path.join(ProgramPath, "install.PyOSPip")) as PipData:
+            Install_List = GetPipList(PipData)
+            if Install_List == "None":
+                print("No Installs Needed")
+                return
+            if InsatllModuels(Install_List) == []:
+                print("AutoPip installed all modules.")
+                return
+            else:
+                errormanager.error("system", "Some installs failed program may not run.")
+                return
+        
+                      
+    except:
+        print("No AutoPip Found")
+        return
+
 #Run programs
 def RunProgram(program_Name):
     try:
-       program_path = os.path.join("System", "Programs", program_Name, "index.py")
-       with open(program_path, "r"):
+       program_path = os.path.join("System", "Programs", program_Name)
+       print("Running Auto Pip")
+       AutoPip(program_path)
+       SystemActions.RestoreColor()
+       with open(os.path.join(program_path, "index.py"), "r"):
            print("Program index.py file found. Running Progam")
-       subprocess.run(['python', program_path])
+       subprocess.run(['python', os.path.join(program_path, "index.py")])
     except:
         errormanager.error("user", "File Not Found or does not contain 'index.py' file. Program May have also ended.")
 

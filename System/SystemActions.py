@@ -18,6 +18,13 @@ def ShowArt(FileName):
     except:
         errormanager.error("system", "Art file doesn't exist or is unreadable.")
 
+def RestoreColor():
+    if CurrentOS == "Windows":
+        with open(os.path.join("System", "StyleData", "TextColor.txt"), "r") as ColorCode:
+            os.system(f"color {ColorCode.read()}")
+    else:
+        ClearScreen()
+
 def ShutDown():
     ClearScreen()
     ShowArt("ShutDownScreen.txt")

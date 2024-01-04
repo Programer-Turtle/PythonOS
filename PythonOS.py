@@ -11,8 +11,11 @@ else:
     os.system("clear")
 
 try:
-    with open(os.path.join("System", "StyleData", "TextColor.txt"), "r") as ColorCode:
-        os.system(f"color {ColorCode.read()}")
+    if CurrentOS == "Windows":
+        with open(os.path.join("System", "StyleData", "TextColor.txt"), "r") as ColorCode:
+            os.system(f"color {ColorCode.read()}")
+    else:
+        os.system("clear")
 except:
     print("SettingDefaultColor...")
     with open(os.path.join("System", "StyleData", "TextColor.txt"), "w") as ColorCode:
