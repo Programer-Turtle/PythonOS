@@ -25,7 +25,7 @@ except:
             os.system("clear")
 
 try:
-    import System.Fixer as Fixer
+    import System.Repair.Fixer as Fixer
 except:
     print("Fixer is missing.")
     print("1.ShutDown")

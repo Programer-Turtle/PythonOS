@@ -1,4 +1,3 @@
-
 #Do not run independently
 def error(error_type, reason):
     if error_type == "user":
