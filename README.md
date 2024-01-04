@@ -30,7 +30,7 @@ Used to run, install, get info from, and delete programs.
 5. **Exit Program Manager** Closes Program Manager and goes back to the normal interface of Python OS
 
 # AutoPip
-A feature that makes it easier to run programs that use moduels.
+A feature in Program Manager that makes it easier to run programs that use moduels.
 
 # What It Does 
 Checks if program has an autopip file, and if it does it installs required moduels using the file.
