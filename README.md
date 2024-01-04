@@ -45,10 +45,11 @@ Checks if program has an autopip file, and if it does it installs required modue
 - Inside this file if you have any imported moduels that are not preinstalled put there name in the file. Every module name must be in a seperate line. If there is no moduels that need to be installed just put "None" on the first line.
 
 # Example
-`pygame`
-`scipy`
-`numpy`
-`pandas`
+If were to want to install this with auto py put these in the file on seperate lines like this.
+- `pygame`
+- `scipy`
+- `numpy`
+- `pandas`
 
 # Preinstalled Programs
 - `AdventureGame` A basic terminal based adventure game. Credits to https://github.com/the-coding-pie/text-based-adventure-game-python
