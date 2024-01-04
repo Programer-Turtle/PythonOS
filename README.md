@@ -33,7 +33,7 @@ Used to run, install, get info from, and delete programs.
 A feature that makes it easier to run programs that use moduels.
 
 # What It Does 
-Checks if program has an autopip file, and if it does it installs required moduels. using the file
+Checks if program has an autopip file, and if it does it installs required moduels using the file.
 
 # Requirements
 - The file must have a "install.PyOSPip" file.
