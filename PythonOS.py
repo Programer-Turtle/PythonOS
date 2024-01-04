@@ -144,7 +144,7 @@ def SetColor(color):
                 TextColorFile.write(color)
             return
        else:
-           print("Color is only supported on windows")
+           print("Color is only supported on Windows.")
     except:
         errormanager.error("user", "Invalid Color Code")
 
