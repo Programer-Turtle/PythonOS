@@ -21,13 +21,15 @@ def GetPipList(file):
     Failed_List = []
     for line in file:
         try:
+            if "None" in line:
+                return "None"
             exec(f"import {line}")
         except:
             Failed_List.append(line)
 
-        if Failed_List == []:
-            return "None"
-        return Failed_List
+    if Failed_List == []:
+        return "None"
+    return Failed_List
 
 def InsatllModuels(InstallList):
     for moduel in InstallList:
@@ -39,7 +41,7 @@ def InsatllModuels(InstallList):
         except:
             errormanager.error("system" , f"Failed to install {moduel}. Auto Pip file could be incorrectly setup.")
             failedList.append(moduel)
-        return failedList
+    return failedList
 
 
 def AutoPip(ProgramPath):
