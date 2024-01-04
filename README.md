@@ -51,8 +51,8 @@ Shows either system or user errors.
 - `User` Output: user error. "reason"
 
 # Fixer
-It contians backups of the code for some system files. It can use these backups to restore files if missing.
-Files ending in ".PyOSRe" are files that contain backup code.
+*** It contians backups of the code for some system files. It can use these backups to restore files if missing. ***
+*** Files ending in ".PyOSRe" are files that contain backup code. ***
 
 **backed up files**
 - `SystemActions.py`
