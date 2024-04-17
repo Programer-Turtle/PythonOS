@@ -57,7 +57,7 @@ If were to want to install this with auto py put these in the file on seperate l
 - `NameCheck` A basic script that allows you to compare names to an unfinished name.
 - `NameScrambled` A basic script that allows you to scramble a list of names.
 - `NameUnscramble` A basic script tha allows to check if a scrambled name is part of a list of unscrambled names. 
-- `Calculator` A basic calulator that can add, subtract, multiplt, divide, and use posistive exponents. This porgram runs using Operations. Operations GitHub: https://github.com/Programer-Turtle/Operations
+- `Calculator` A basic calulator that can add, subtract, multiplt, divide, and exponents. This porgram runs using Operations. Operations GitHub: https://github.com/Programer-Turtle/Operations
 - `Snake Game` A basic snake game using pygame. Credits to https://github.com/rajatdiptabiswas/snake-pygame
 - `WikiSearch` A basic program that lets you learn about a subject by getting a basic summary about it from Wikipedia. There is also a GUI version if you wish to download it. WikiSearch GitHub: https://github.com/Programer-Turtle/WikiSearch
 

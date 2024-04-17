@@ -30,8 +30,4 @@ def divide(*nums):
     return answer
 
 def exponent(number, exponent):
-    answer = number
-    for _ in range(1, exponent):
-        answer*=number
-    
-    return answer
+    return number**exponent
